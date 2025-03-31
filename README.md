@@ -56,10 +56,11 @@ The server will start running on http://localhost:5000
 The API connects to a PostgreSQL database with the following configuration:
 
 ```javascript
-const sequelize = new Sequelize("sequelizedb", "postgres", "marvin123", {
+const sequelize = new Sequelize("sequelizedb", "postgres", "yourpassword", {
   host: "localhost",
   dialect: "postgres",
-});
+}); 
+Check the Sequelize docs
 ```
 
 Make sure to have a PostgreSQL server running with a database named `sequelizedb`. You may need to adjust the credentials based on your local setup.
